@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body onkeypress="sound(event)">
+    <div id="page-wrapper background" >
+        <h1>JAVASCRIPT DRUM KIT</h1>
+
+        <h2>USE KEYBOARD TO PLAY DRUM</h2>
+
+        <img src="https://media.giphy.com/media/9xnukT596h0wPX8k3B/giphy.gif">
+
+        <div class="sound-wrapper">
+            <audio>
+                <audio id="clap" src="/sounds/clap.wav" type="audio/wav">
+                <audio id="hihat" src="/sounds/hihat.wav" type="audio/wav">
+                <audio id="kick" src="/sounds/kick.wav" type="audio/wav"></audio>
+                <audio id="openhat" src="/sounds/openhat.wav" type="audio/wav"></audio>
+                <audio id="boom" src="/sounds/boom.wav" type="audio/wav"></audio>
+                <audio id="ride" src="/sounds/ride.wav" type="audio/wav"></audio>
+                <audio id="snare" src="/sounds/snare.wav" type="audio/wav"></audio>
+                <audio id="tom" src="/sounds/tom.wav" type="audio/wav"></audio>
+                <audio id="tink" src="/sounds/tink.wav" type="audio/wav"></audio>
+            </audio>
+        </div>
+
+
+        <div class="wrapper" >
+            <div class="box" onclick="playClap()">A <br> clap </div>
+            <div class="box" onclick="playHihat()">S <br> hihat </div>
+            <div class="box" onclick="playKick()">D <br> kick </div>
+            <div class="box" onclick="playOpenhat()">F <br> openhat </div>
+            <div class="box" onclick="playBoom()">G <br> boom </div>
+            <div class="box" onclick="playRide()">H <br> ride </div>
+            <div class="box" onclick="playSnare()">J <br> snare </div>
+            <div class="box" onclick="playTom()">K <br> tom </div>
+            <div class="box" onclick="playTink()">L <br> tink </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
